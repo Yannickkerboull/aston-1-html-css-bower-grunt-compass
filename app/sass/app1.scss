@@ -32,10 +32,10 @@ a {
 }
 
 .bloc {
-  margin-left:25px;
+  margin-left:1px;
   float:left;
   background:white;
-  width:50%;
+  width:44%;
   .author {
   	font-weight: normal;
     bloc:float;
@@ -48,7 +48,8 @@ a {
       @extend .author;
     }
     a:hover {
-      color:red;
+      @extend .author;
+      color:black;
     }
   }
   a {
@@ -77,6 +78,10 @@ a {
   margin: 0px 0px 15px;
   padding: 0px;
 }
+.bord {
+  /*color:blue;*/
+  border-bottom: 1px solid #DDD;
+}
 
 .bordure_img {
   @include bordure_img (155px,268px);
@@ -87,9 +92,10 @@ a {
 }
 
 .coms_img {
- @include coms_img (100%);
+  @include coms_img (100%);
 }
 
 .coms_img1 {
-  @include coms_img (218px);
+  padding-left: 10px;
+  @include coms_img (75%);
 }
